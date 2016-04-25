@@ -44,16 +44,10 @@ class EmployeeController extends Controller {
 
 	function createOrUpdate($id = 0)
 	{
-		$messages = [
-			'fio.unique' => 'Поле ABJ повторяется.',
-		];
 		$data = json_decode($_POST['data'], true);
 		$rules = array(
 			'fio'       => 'unique:employees,fio' . ($id ? ",$id" : ''),
 		);
-		$niceNames = [
-			'fio' => 'ФИО'
-		];
 		$validator = Validator::make($data, $rules);
 
 

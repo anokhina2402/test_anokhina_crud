@@ -18,7 +18,6 @@ Route::any('employees/{id}/update',['as' => 'employees.update', 'uses' => 'Emplo
 Route::any('employees/{id}/delete',['as' => 'employees.destroy', 'uses' => 'EmployeeController@Destroy']);
 Route::get('employees/{id}',['as' => 'employees.show', 'uses' => 'EmployeeController@Show']);
 Route::get('employees/{id}/edit',['as' => 'employees.edit', 'uses' => 'EmployeeController@Edit']);
-//Route::any('employees/add',['as' => 'employees.store', 'uses' => 'EmployeeController@Store']);
 
 
 

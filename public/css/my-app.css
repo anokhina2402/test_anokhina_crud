@@ -1,0 +1,21 @@
+.card-header {
+	min-height:175px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+
+}
+.card-footer a.link {
+	color:#A0CF4F;
+}
+
+.card-overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 8px;
+	padding-left: 16px;
+	background: rgba(0, 0, 0, 0.65);
+}
